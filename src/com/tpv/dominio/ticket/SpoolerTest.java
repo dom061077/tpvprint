@@ -67,7 +67,7 @@ public class SpoolerTest {
             
             try{
                 stcp.connect();
-                request = hfp.cmdOpenFiscalReceipt("B");
+                request = hfp.cmdOpenFiscalReceipt("C");
                 stcp.execute(request, response);
                 
                 //cmdPrintLineItem(String description, BigDecimal quantity
