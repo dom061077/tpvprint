@@ -1,0 +1,126 @@
+dic 13, 2015 1:02:46 PM hfl.argentina.ProtocolHTTP sendCommand
+INFORMACIÓN: Iniciando conexión: 127.0.0.1
+dic 13, 2015 1:02:46 PM hfl.argentina.ProtocolHTTP sendCommand
+INFORMACIÓN: <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ConsultarEstado>
+<CodigoComprobante>NoDocumento</CodigoComprobante>
+</ConsultarEstado>
+
+dic 13, 2015 1:02:48 PM hfl.argentina.ProtocolHTTP sendCommand
+GRAVE: Connection refused: connect
+dic 13, 2015 1:04:28 PM hfl.argentina.ProtocolHTTP sendCommand
+INFORMACIÓN: Iniciando conexión: 127.0.0.1
+dic 13, 2015 1:04:28 PM hfl.argentina.ProtocolHTTP sendCommand
+INFORMACIÓN: <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ConsultarEstado>
+<CodigoComprobante>NoDocumento</CodigoComprobante>
+</ConsultarEstado>
+
+dic 13, 2015 1:04:28 PM hfl.argentina.ProtocolHTTP responseXML
+INFORMACIÓN: *** Respuesta ***
+dic 13, 2015 1:04:28 PM hfl.argentina.ProtocolHTTP responseXML
+INFORMACIÓN: <?xml version="1.0" encoding="UTF-8"?><ConsultarEstado>	<Secuencia>1</Secuencia>	<Estado>		<Impresora type="list">		</Impresora>		<Fiscal type="list">			<Fiscal>MemoriaFiscalInicializada</Fiscal>		</Fiscal>	</Estado>	<EstadoAuxiliar type="list">	</EstadoAuxiliar>	<EstadoInterno>EnJornadaFiscal</EstadoInterno>	<ComprobanteEnCurso>NoDocumento</ComprobanteEnCurso>	<CodigoComprobante>NoDocumento</CodigoComprobante>	<NumeroUltimoComprobante>0</NumeroUltimoComprobante>	<CantidadEmitidos>0</CantidadEmitidos>	<CantidadCancelados>0</CantidadCancelados></ConsultarEstado>
+dic 13, 2015 1:04:54 PM hfl.argentina.ProtocolHTTP sendCommand
+INFORMACIÓN: Iniciando conexión: 127.0.8.1
+dic 13, 2015 1:04:54 PM hfl.argentina.ProtocolHTTP sendCommand
+INFORMACIÓN: <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ConsultarEstado>
+<CodigoComprobante>NoDocumento</CodigoComprobante>
+</ConsultarEstado>
+
+dic 13, 2015 1:04:54 PM hfl.argentina.ProtocolHTTP responseXML
+INFORMACIÓN: *** Respuesta ***
+dic 13, 2015 1:04:54 PM hfl.argentina.ProtocolHTTP responseXML
+INFORMACIÓN: <?xml version="1.0" encoding="UTF-8"?><ConsultarEstado>	<Secuencia>2</Secuencia>	<Estado>		<Impresora type="list">		</Impresora>		<Fiscal type="list">			<Fiscal>MemoriaFiscalInicializada</Fiscal>		</Fiscal>	</Estado>	<EstadoAuxiliar type="list">	</EstadoAuxiliar>	<EstadoInterno>EnJornadaFiscal</EstadoInterno>	<ComprobanteEnCurso>NoDocumento</ComprobanteEnCurso>	<CodigoComprobante>NoDocumento</CodigoComprobante>	<NumeroUltimoComprobante>0</NumeroUltimoComprobante>	<CantidadEmitidos>0</CantidadEmitidos>	<CantidadCancelados>0</CantidadCancelados></ConsultarEstado>
+dic 13, 2015 1:07:13 PM hfl.argentina.ProtocolHTTP sendCommand
+INFORMACIÓN: Iniciando conexión: 
+dic 13, 2015 1:07:13 PM hfl.argentina.ProtocolHTTP sendCommand
+INFORMACIÓN: <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ConsultarEstado>
+<CodigoComprobante>NoDocumento</CodigoComprobante>
+</ConsultarEstado>
+
+dic 13, 2015 1:07:13 PM hfl.argentina.ProtocolHTTP sendCommand
+GRAVE: protocol = http host = null
+dic 13, 2015 1:07:41 PM hfl.argentina.ProtocolHTTP sendCommand
+INFORMACIÓN: Iniciando conexión: 5
+dic 13, 2015 1:07:41 PM hfl.argentina.ProtocolHTTP sendCommand
+INFORMACIÓN: <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ConsultarEstado>
+<CodigoComprobante>NoDocumento</CodigoComprobante>
+</ConsultarEstado>
+
+dic 13, 2015 1:07:41 PM hfl.argentina.ProtocolHTTP sendCommand
+GRAVE: Network is unreachable: connect
+dic 13, 2015 1:08:13 PM hfl.argentina.ProtocolHTTP sendCommand
+INFORMACIÓN: Iniciando conexión: 127.0.0.1
+dic 13, 2015 1:08:13 PM hfl.argentina.ProtocolHTTP sendCommand
+INFORMACIÓN: <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ConsultarEstado>
+<CodigoComprobante>NoDocumento</CodigoComprobante>
+</ConsultarEstado>
+
+dic 13, 2015 1:08:13 PM hfl.argentina.ProtocolHTTP responseXML
+INFORMACIÓN: *** Respuesta ***
+dic 13, 2015 1:08:13 PM hfl.argentina.ProtocolHTTP responseXML
+INFORMACIÓN: <?xml version="1.0" encoding="UTF-8"?><ConsultarEstado>	<Secuencia>3</Secuencia>	<Estado>		<Impresora type="list">		</Impresora>		<Fiscal type="list">			<Fiscal>MemoriaFiscalInicializada</Fiscal>		</Fiscal>	</Estado>	<EstadoAuxiliar type="list">	</EstadoAuxiliar>	<EstadoInterno>EnJornadaFiscal</EstadoInterno>	<ComprobanteEnCurso>NoDocumento</ComprobanteEnCurso>	<CodigoComprobante>NoDocumento</CodigoComprobante>	<NumeroUltimoComprobante>0</NumeroUltimoComprobante>	<CantidadEmitidos>0</CantidadEmitidos>	<CantidadCancelados>0</CantidadCancelados></ConsultarEstado>
+dic 13, 2015 1:14:45 PM hfl.argentina.ProtocolHTTP sendCommand
+INFORMACIÓN: Iniciando conexión: 127.0.0.1
+dic 13, 2015 1:14:45 PM hfl.argentina.ProtocolHTTP sendCommand
+INFORMACIÓN: <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ImprimirTextoGenerico>
+<Atributos type="list">
+<Atributos>Centrado</Atributos>
+</Atributos>
+<Texto>TITULO DOC. GENERICO</Texto>
+<ModoDisplay>DisplayNo</ModoDisplay>
+</ImprimirTextoGenerico>
+
+dic 13, 2015 1:14:45 PM hfl.argentina.ProtocolHTTP responseXML
+INFORMACIÓN: *** Respuesta ***
+dic 13, 2015 1:14:45 PM hfl.argentina.ProtocolHTTP responseXML
+INFORMACIÓN: <?xml version="1.0" encoding="UTF-8"?><ImprimirTextoGenerico>	<Secuencia>4</Secuencia>	<Estado>		<Impresora type="list">		</Impresora>		<Fiscal type="list">			<Fiscal>ErrorEstado</Fiscal>			<Fiscal>MemoriaFiscalInicializada</Fiscal>			<Fiscal>ErrorEjecucion</Fiscal>		</Fiscal>	</Estado></ImprimirTextoGenerico>
+dic 13, 2015 1:14:45 PM hfl.argentina.ProtocolHTTP sendCommand
+INFORMACIÓN: Iniciando conexión: 127.0.0.1
+dic 13, 2015 1:14:45 PM hfl.argentina.ProtocolHTTP sendCommand
+INFORMACIÓN: <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ConsultarUltimoError/>
+
+dic 13, 2015 1:14:45 PM hfl.argentina.ProtocolHTTP responseXML
+INFORMACIÓN: *** Respuesta ***
+dic 13, 2015 1:14:45 PM hfl.argentina.ProtocolHTTP responseXML
+INFORMACIÓN: <?xml version="1.0" encoding="UTF-8"?><ConsultarUltimoError>	<Secuencia>5</Secuencia>	<Estado>		<Impresora type="list">		</Impresora>		<Fiscal type="list">			<Fiscal>MemoriaFiscalInicializada</Fiscal>		</Fiscal>	</Estado>	<UltimoError>CMD_INVALID_STATE</UltimoError>	<NumeroParametro>0</NumeroParametro>	<Descripcion>Comando no válido para el estado fiscal actual</Descripcion>	<Contexto>Imposible ejecutar el comando en el estado EnJornadaFiscal</Contexto>	<NombreParametro></NombreParametro></ConsultarUltimoError>
+dic 23, 2015 7:35:19 PM hfl.argentina.ProtocolHTTP sendCommand
+INFORMACIÓN: Iniciando conexión: 127.0.0.1
+dic 23, 2015 7:35:19 PM hfl.argentina.ProtocolHTTP sendCommand
+INFORMACIÓN: <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ConsultarVersion/>
+
+dic 23, 2015 7:35:20 PM hfl.argentina.ProtocolHTTP sendCommand
+GRAVE: Connection refused: connect
+dic 23, 2015 7:36:31 PM hfl.argentina.ProtocolHTTP sendCommand
+INFORMACIÓN: Iniciando conexión: 127.0.0.1
+dic 23, 2015 7:36:31 PM hfl.argentina.ProtocolHTTP sendCommand
+INFORMACIÓN: <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ConsultarVersion/>
+
+dic 23, 2015 7:36:31 PM hfl.argentina.ProtocolHTTP responseXML
+INFORMACIÓN: *** Respuesta ***
+dic 23, 2015 7:36:31 PM hfl.argentina.ProtocolHTTP responseXML
+INFORMACIÓN: <?xml version="1.0" encoding="UTF-8"?><ConsultarVersion>	<Secuencia>1</Secuencia>	<Estado>		<Impresora type="list">		</Impresora>		<Fiscal type="list">			<Fiscal>MemoriaFiscalInicializada</Fiscal>		</Fiscal>	</Estado>	<Version>SMH/PT-1000F V: 01.00</Version>	<Marca>Hasar</Marca>	<NombreProducto>D6</NombreProducto>	<VersionMotor>6.00A</VersionMotor>	<FechaFirmware>11/06/2015 12:50:03</FechaFirmware>	<VersionProtocolo>0</VersionProtocolo></ConsultarVersion>
+dic 23, 2015 7:45:44 PM hfl.argentina.ProtocolHTTP sendCommand
+INFORMACIÓN: Iniciando conexión: 127.0.0.1
+dic 23, 2015 7:45:44 PM hfl.argentina.ProtocolHTTP sendCommand
+INFORMACIÓN: <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ConsultarVersion/>
+
+dic 23, 2015 7:45:44 PM hfl.argentina.ProtocolHTTP responseXML
+INFORMACIÓN: *** Respuesta ***
+dic 23, 2015 7:45:44 PM hfl.argentina.ProtocolHTTP responseXML
+INFORMACIÓN: <?xml version="1.0" encoding="UTF-8"?><ConsultarVersion>	<Secuencia>2</Secuencia>	<Estado>		<Impresora type="list">		</Impresora>		<Fiscal type="list">			<Fiscal>MemoriaFiscalInicializada</Fiscal>		</Fiscal>	</Estado>	<Version>SMH/PT-1000F V: 01.00</Version>	<Marca>Hasar</Marca>	<NombreProducto>D6</NombreProducto>	<VersionMotor>6.00A</VersionMotor>	<FechaFirmware>11/06/2015 12:50:03</FechaFirmware>	<VersionProtocolo>0</VersionProtocolo></ConsultarVersion>
+dic 23, 2015 7:46:24 PM hfl.argentina.ProtocolHTTP sendCommand
+INFORMACIÓN: Iniciando conexión: 127.0.0.1:1600
+dic 23, 2015 7:46:24 PM hfl.argentina.ProtocolHTTP sendCommand
+INFORMACIÓN: <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ConsultarVersion/>
+
