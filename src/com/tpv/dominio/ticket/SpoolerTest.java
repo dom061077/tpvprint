@@ -29,10 +29,6 @@ public class SpoolerTest {
             FiscalPacket request;
             HasarFiscalPrinter hfp = new HasarPrinterP320F(); //HasarPrinterP715F();
             FiscalPacket response = new HasarFiscalPacket("ISO8859_1", 2015, hfp);
-
-            //System.out.println(request.encodeString());
-
-            
             
             try{
                 stcp.connect();
@@ -51,6 +47,7 @@ public class SpoolerTest {
                 System.out.println("RESPUESTA DE LINEA DE ITEM: "+response.encodeString());
                 
                 stcp.close();
+                
             }catch(Exception e){
                 e.printStackTrace();
             }
@@ -78,63 +75,88 @@ public class SpoolerTest {
     }
     
     public void printDf(){
-            SpoolerTCPComm stcp = new SpoolerTCPComm("127.0.0.1",1600);
-            FiscalPacket request;
-            HasarFiscalPrinter hfp = new HasarPrinterP320F();
-            FiscalPacket response = new HasarFiscalPacket("ISO8859_1", 2015, hfp);
-                    
-            //System.out.println(request.encodeString());
-
-            
-            
-            try{
-                stcp.connect();
-                request = hfp.cmdOpenFiscalReceipt("C");
-                stcp.execute(request, response);
-                System.out.println("RESPUESTA APERTURA DE DOCUMENTO FISCAL: "+response.encodeString());
-
-                /*request = hfp.cmdPrintLineItem("CACAO", new BigDecimal(1), new BigDecimal(1), new BigDecimal(21), false, new BigDecimal(1), true,null);
-                stcp.execute(request, response);
-                System.out.println("RESPUESTA DE LINEA DE ITEM: "+response.encodeString());
-                */
-                request = hfp.cmdCloseFiscalReceipt(new Integer(1));
-                stcp.execute(request, response);
-                System.out.println("CIERRE DE DOCUMENTO FISCAL: "+response.encodeString());
-                
-                stcp.close();
-            }catch(Exception e){
-                e.printStackTrace();
-            }
-        
-    }
-            
-    
-    public void printDF2(){
+            //-----------------------------------------------
           SpoolerTCPComm stcp = new SpoolerTCPComm("127.0.0.1",1600);
           HasarFiscalPrinter hfp = new HasarPrinterP320F(stcp);
           FiscalPacket request;
           FiscalPacket response;
+          FiscalMessages fMsg;
+          try{
+              hfp.connect();
+              request = hfp.cmdOpenFiscalReceipt("B");
+              try{
+                response = hfp.execute(request);
+                
+              }catch(FiscalPrinterStatusError e){
+                fMsg = hfp.getMessages();
+                System.out.println(fMsg.getErrorsAsString());
+              }
+              request = hfp.cmdPrintLineItem("CACAO", new BigDecimal(1), new BigDecimal(1), new BigDecimal(21), false, new BigDecimal(1), true,0);
+              try{
+                response = hfp.execute(request);
+              }catch(FiscalPrinterStatusError e){
+                fMsg = hfp.getMessages();
+                System.out.println(fMsg.getErrorsAsString());
+              }
+
+              
+              request = hfp.cmdCloseFiscalReceipt(null);
+              try{
+                response = hfp.execute(request);
+              }catch(FiscalPrinterStatusError e){
+                fMsg = hfp.getMessages();
+                System.out.println(fMsg.getErrorsAsString());
+              }
+          
+          }
+          catch(FiscalPrinterIOException e){
+              System.out.println(e.getFullMessage());
+              //hfp.get
+          }catch(Exception e){
+              e.printStackTrace();
+          }
+            
+            
+    }
+           
+    
+            
+    
+    public void printDNF2(){
+          SpoolerTCPComm stcp = new SpoolerTCPComm("127.0.0.1",1600);
+          HasarFiscalPrinter hfp = new HasarPrinterP320F(stcp);
+          FiscalPacket request;
+          FiscalPacket response;
+          FiscalMessages fMsg;
           try{
               hfp.connect();
               request = hfp.cmdOpenNonFiscalReceipt();
-              response = hfp.execute(request);
-              FiscalMessages fMsg = hfp.getMessages();
-              System.out.println(fMsg.getErrorsAsString());
+              try{
+                response = hfp.execute(request);
+                
+              }catch(FiscalPrinterStatusError e){
+                fMsg = hfp.getMessages();
+                System.out.println(fMsg.getErrorsAsString());
+              }
+              request = hfp.cmdPrintNonFiscalText(" CAJÒN DE MUÑA MUÑA ", 0);
+              try{
+                response = hfp.execute(request);
+              }catch(FiscalPrinterStatusError e){
+                fMsg = hfp.getMessages();
+                System.out.println(fMsg.getErrorsAsString());
+              }
 
-              request = hfp.cmdPrintNonFiscalText("DOCUMENTO NO FISCAL", null);
-              response = hfp.execute(request);
-              fMsg = hfp.getMessages();
-              System.out.println(fMsg.getErrorsAsString());
               
               request = hfp.cmdCloseNonFiscalReceipt(null);
-              response = hfp.execute(request);
-              fMsg = hfp.getMessages();
-              System.out.println(fMsg.getErrorsAsString());
+              try{
+                response = hfp.execute(request);
+              }catch(FiscalPrinterStatusError e){
+                fMsg = hfp.getMessages();
+                System.out.println(fMsg.getErrorsAsString());
+              }
           
-          }catch(FiscalPrinterStatusError e)    {
-              System.out.println(e.getFullMessage());
-              
-          }catch(FiscalPrinterIOException e){
+          }
+          catch(FiscalPrinterIOException e){
               System.out.println(e.getFullMessage());
               //hfp.get
           }catch(Exception e){
@@ -146,8 +168,9 @@ public class SpoolerTest {
     
     public static void main(String args[]){
         SpoolerTest st = new SpoolerTest();
-        //st.printDF2();
-        st.cancelarDocument();
+        //st.printDNF2();
+        //st.cancelarDocument();
+        st.printDf();
     }
     
 }
