@@ -17,6 +17,7 @@ public class HasarPrinterP320F extends HasarFiscalPrinter {
 
 	public String formatAmount(BigDecimal amount) {
 		amount = amount.setScale(4, BigDecimal.ROUND_HALF_UP);
+                
 		return amount.toString();
 	}
 

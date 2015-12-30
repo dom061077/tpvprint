@@ -77,7 +77,7 @@ public class SpoolerTest {
     public void printDf(){
             //-----------------------------------------------
           SpoolerTCPComm stcp = new SpoolerTCPComm("127.0.0.1",1600);
-          HasarFiscalPrinter hfp = new HasarPrinterP320F(stcp);
+          HasarFiscalPrinter hfp = new HasarPrinterP715F(stcp); //new HasarPrinterP320F(stcp);
           FiscalPacket request;
           FiscalPacket response;
           FiscalMessages fMsg;
@@ -126,7 +126,7 @@ public class SpoolerTest {
     
     public void printDNF2(){
           SpoolerTCPComm stcp = new SpoolerTCPComm("127.0.0.1",1600);
-          HasarFiscalPrinter hfp = new HasarPrinterP320F(stcp);
+          HasarFiscalPrinter hfp = new HasarPrinterP715F(stcp); //new HasarPrinterP320F(stcp);
           FiscalPacket request;
           FiscalPacket response;
           FiscalMessages fMsg;
@@ -170,9 +170,9 @@ public class SpoolerTest {
     
     public static void main(String args[]){
         SpoolerTest st = new SpoolerTest();
-        //st.printDNF2();
+        st.printDNF2();
         //st.cancelarDocument();
-        st.printDf();
+        //st.printDf();
     }
     
 }
