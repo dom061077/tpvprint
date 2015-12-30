@@ -91,7 +91,9 @@ public class SpoolerTest {
                 fMsg = hfp.getMessages();
                 System.out.println(fMsg.getErrorsAsString());
               }
-              request = hfp.cmdPrintLineItem("CACAO", new BigDecimal(1), new BigDecimal(1), new BigDecimal(21), false, new BigDecimal(1), true,0);
+               //cmdPrintLineItem(String description, BigDecimal quantity, BigDecimal price, BigDecimal ivaPercent
+              //, boolean substract, BigDecimal internalTaxes, boolean basePrice, Integer display) {
+              request = hfp.cmdPrintLineItem("CACAO", new BigDecimal("1"), new BigDecimal("1"), new BigDecimal("21"), false, new BigDecimal("0"), false,0);
               try{
                 response = hfp.execute(request);
               }catch(FiscalPrinterStatusError e){

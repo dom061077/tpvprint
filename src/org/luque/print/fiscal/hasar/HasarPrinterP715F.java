@@ -64,6 +64,8 @@ public class HasarPrinterP715F extends HasarFiscalPrinter {
 	@Override
 	public FiscalPacket cmdPrintLineItem(String description, BigDecimal quantity, BigDecimal price, BigDecimal ivaPercent, boolean substract, BigDecimal internalTaxes, boolean basePrice, Integer display) {
 		// Force display 0 and maxlength 20 to comply with model docs.
+		//return cmdPrintLineItem(description, quantity, price, ivaPercent,substract, internalTaxes, basePrice, 0);
+            
 		return cmdPrintLineItem(description, quantity, price, ivaPercent, substract, internalTaxes, basePrice, 0, 20);
 	}
 	
