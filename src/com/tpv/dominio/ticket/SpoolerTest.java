@@ -170,9 +170,9 @@ public class SpoolerTest {
     
     public static void main(String args[]){
         SpoolerTest st = new SpoolerTest();
-        //st.printDNF2();
+        st.printDNF2();
         //st.cancelarDocument();
-        st.printDf();
+        //st.printDf();
     }
     
 }
